@@ -1,4 +1,8 @@
 .vscode
+.settings
+.classpath
+.project
+target
 playback
 presentation
 static
