@@ -74,6 +74,8 @@ public class ClassView extends JFrame implements ActionListener {
             ResourceHandler resourceHandler = new ResourceHandler();
             resourceHandler.setDirAllowed(true);
             resourceHandler.setResourceBase(".");
+            String cacheControl = "no-cache, no-store";
+            resourceHandler.setCacheControl(cacheControl);
             server.setHandler(resourceHandler);
             Runnable r = new Runnable() {
                 public void run() {
