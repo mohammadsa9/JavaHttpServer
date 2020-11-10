@@ -28,10 +28,11 @@ public class ClassView extends JFrame implements ActionListener {
         setTitle("BBB playback Viewer by DarkCode");
         setLayout(new GridLayout(0, 1));
         add(new JLabel(""));
-        JLabel tlabel = new JLabel("Use this tool to view your localy downloaded playback of BBB",
+        JLabel tlabel = new JLabel(
+                "Use this tool to view your locally downloaded playback of BigBlueButton online session",
                 SwingConstants.CENTER);
         JLabel method1 = new JLabel(
-                "After clicking on View Playback you can open this link in any browser to watch the playback",
+                "After clicking on \"View Playback\" you can open this link in any browser to watch the playback",
                 SwingConstants.CENTER);
         JLabel method2 = new JLabel("http://127.0.0.1:9081", SwingConstants.CENTER);
         JLabel warning = new JLabel(
@@ -45,6 +46,7 @@ public class ClassView extends JFrame implements ActionListener {
         add(method1);
         add(method2);
         // add(warning);
+        add(new JLabel("Click on \"Exit\" when you are done", SwingConstants.CENTER));
         add(new JLabel(""));
         JButton view1 = new JButton("View Playback");
         JButton view2 = new JButton("View Playback - Method 2");
