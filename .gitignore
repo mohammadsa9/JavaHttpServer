@@ -1,10 +1,2 @@
 .vscode
-.settings
-.classpath
-.factorypath
-.project
-target
-playback
-presentation
-static
-index.html
+/target
